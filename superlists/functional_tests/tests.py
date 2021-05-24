@@ -67,7 +67,7 @@ class NewVisitorTest(StaticLiveServerTestCase):
 
         #Edith wonders whether the site will remember her list.
         #She sees that the site has generated a unique URL for her.
-        self.fail('Finish the test!')
+        #self.fail('Finish the test!')
         # Steve wraps-up his list building
 
 
