@@ -25,7 +25,7 @@ SECRET_KEY = '8mxf8)=ypdb(f$(zswy8a)6d2&@3j5&l!x1^(q97q!av7ifvz9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
