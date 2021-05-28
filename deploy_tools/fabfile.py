@@ -24,7 +24,7 @@ def _get_latest_source():
 
 def _update_virtualenv():
     if not exists('virtualenv/bin/pip'):
-        run(f'python3.7 -m venv virtualenv')
+        run(f'python3 -m venv virtualenv')
     run('./virtualenv/bin/pip install -r requirements.txt')
 
 def _create_or_update_dotenv():
@@ -38,8 +38,8 @@ def _create_or_update_dotenv():
         append('.env', f'DJANGO_SECRET_KEY={new_secret}')
 
 def _update_static_files():
-    run('./virtualenv/bin/python manage.py collectstatic --noinput')
+    run('./virtualenv/bin/python ./superlists/manage.py collectstatic --noinput')
 
 
 def _update_database():
-    run('./virtualenv/bin/python manage.py migrate --noinput')
+    run('./virtualenv/bin/python ./superlists/manage.py migrate --noinput')
